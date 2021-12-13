@@ -13,6 +13,10 @@
 		1238EFEE2767D96000B2C25C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1238EFEC2767D96000B2C25C /* Main.storyboard */; };
 		1238EFF02767D96300B2C25C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1238EFEF2767D96300B2C25C /* Assets.xcassets */; };
 		1238EFF32767D96300B2C25C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1238EFF12767D96300B2C25C /* LaunchScreen.storyboard */; };
+		1238EFFB2767DA2300B2C25C /* BucketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238EFFA2767DA2300B2C25C /* BucketListViewController.swift */; };
+		1238EFFD2767DAA300B2C25C /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238EFFC2767DAA300B2C25C /* AddItemViewController.swift */; };
+		1238EFFF2767DAD400B2C25C /* AddItemViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238EFFE2767DAD400B2C25C /* AddItemViewControllerDelegate.swift */; };
+		1238F0022767DB2800B2C25C /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1238F0002767DB2800B2C25C /* BucketList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1238EFEF2767D96300B2C25C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1238EFF22767D96300B2C25C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1238EFF42767D96300B2C25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1238EFFA2767DA2300B2C25C /* BucketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewController.swift; sourceTree = "<group>"; };
+		1238EFFC2767DAA300B2C25C /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		1238EFFE2767DAD400B2C25C /* AddItemViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewControllerDelegate.swift; sourceTree = "<group>"; };
+		1238F0012767DB2800B2C25C /* BucketList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				1238EFE62767D96000B2C25C /* AppDelegate.swift */,
+				1238F0002767DB2800B2C25C /* BucketList.xcdatamodeld */,
 				1238EFE82767D96000B2C25C /* SceneDelegate.swift */,
 				1238EFEA2767D96000B2C25C /* ViewController.swift */,
 				1238EFEC2767D96000B2C25C /* Main.storyboard */,
+				1238EFFA2767DA2300B2C25C /* BucketListViewController.swift */,
+				1238EFFC2767DAA300B2C25C /* AddItemViewController.swift */,
+				1238EFFE2767DAD400B2C25C /* AddItemViewControllerDelegate.swift */,
 				1238EFEF2767D96300B2C25C /* Assets.xcassets */,
 				1238EFF12767D96300B2C25C /* LaunchScreen.storyboard */,
 				1238EFF42767D96300B2C25C /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1238EFFF2767DAD400B2C25C /* AddItemViewControllerDelegate.swift in Sources */,
+				1238EFFD2767DAA300B2C25C /* AddItemViewController.swift in Sources */,
 				1238EFEB2767D96000B2C25C /* ViewController.swift in Sources */,
 				1238EFE72767D96000B2C25C /* AppDelegate.swift in Sources */,
+				1238EFFB2767DA2300B2C25C /* BucketListViewController.swift in Sources */,
 				1238EFE92767D96000B2C25C /* SceneDelegate.swift in Sources */,
+				1238F0022767DB2800B2C25C /* BucketList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +310,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +338,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1238F0002767DB2800B2C25C /* BucketList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1238F0012767DB2800B2C25C /* BucketList.xcdatamodel */,
+			);
+			currentVersion = 1238F0012767DB2800B2C25C /* BucketList.xcdatamodel */;
+			path = BucketList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1238EFDB2767D96000B2C25C /* Project object */;
 }
